@@ -1,45 +1,90 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      padding: 0 10px;
       font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 1.5;
     }
-    .red {
-      color: red;
-    }
+
     .header {
-      height: 500px;
+      height: 200px;
+      max-width: 100%;
       background: url(img/header.png) center center no-repeat;
+      background-size: contain;
     }
+
     .container {
       max-width: 740px;
       margin: auto;
     }
+
     h1 {
-      font-size: 40px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 22px;
       font-weight: 400;
       line-height: 1.1;
     }
-  </style>  
+
+    .img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+
+    .date {
+      margin-bottom: 30px;
+      color: gray;
+    }
+
+    @media screen and (min-width: 768px) {
+      body {
+        font-size: 18px;
+      }
+      .header {
+        height: 300px;
+      }
+      h1 {
+        margin-top: 70px;
+        font-size: 40px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
- <div class="header"></div>
- <div class="container">
- 	<article>
-   <h1>C'est parti pour la grande aventure !</h1>
-   <div class="red">En route pour Senja ! c'est parti</div>
-   <img src="img/IMG_5165.jpg" alt="">
-   </article>
+  <div class="header"></div>
+  <div class="container">
     <article>
-   <h1>Au camping des cerisiers</h1>
-   <div class="red">On s'entraine pour le voyage</div>
-   <img src="img/maubec.JPG" alt="">
-   </article>
+      <h1>C'est parti pour la grande aventure !</h1>
+      <div class="date">11/11/2011 - Céline</div>
+      <div class="red">En route pour Senja ! c'est parti</div>
+      <img src="img/IMG_5165.jpg" alt="" class="img">
+      <p>Les possibilités accordées par Grid Layout à nous autres webdesigners sont sans conteste à mille lieues de ce que l'on était capable de produire avant. Le prix à payer en est que les spécifications du modèle Grid Layout comptent également sans conteste parmi les plus fournies et indigestes du langage CSS.</p>
+
+      <p>Le livre "CSS3 Grid Layout, vous allez enfin aimer CSS" consacré au modèle Grid Layout se veut pratique et complémentaire à celui dédié à Flexbox. L'un et l'autre vont explorer différentes méthodes de conception de gabarits et de composants web à l'aide de cas d'usages très concrets rencontrés lors de nos intégrations dans l'agence web Alsacréations.</p>
+
+      <p>Cet ouvrage, publié le 28 février 2019, vous permettra de découvrir et de tirer parti de toutes les nouveautés apportées par cette [spécification CSS3 du W3C](https://www.w3.org/TR/css-grid-1/), notamment à travers : 144 pages en couleurs, 8 travaux pratiques décortiqués, et une centaine d'illustrations et codes consultables en ligne.</p>
+    </article>
+    <article>
+      <h1>Au camping des cerisiers</h1>
+      <div class="red">On s'entraine pour le voyage</div>
+      <img src="img/maubec.JPG" alt="" class="img">
+    </article>
   </div>
 </body>
+
 </html>
