@@ -25,7 +25,7 @@ body {
 }
 
 aside {
-  padding: 30px 0;
+  padding: 50px 0;
   font-size: 12px;
 }
 aside iframe {
@@ -89,9 +89,6 @@ h1 {
   }
 }
 @media screen and (min-width: 485px) and (max-width: 1179px) {
-  aside {
-    padding: 30px 0 50px 0;
-  }
   .map {
     float: left;
     margin-right: 20px;
