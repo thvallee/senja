@@ -30,7 +30,7 @@ aside {
 aside iframe {
   display: block;
 }
-aside > div {
+aside .infos {
   margin-top: 10px;
 }
 
@@ -91,7 +91,7 @@ h1 {
   aside {
     padding: 30px 0 50px 0;
   }
-  iframe {
+  .map {
     float: left;
     margin-right: 20px;
   }
