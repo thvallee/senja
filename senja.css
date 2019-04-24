@@ -58,6 +58,7 @@ h1 {
   display: block;
   width: auto;
   overflow: hidden;
+  clear: both;
 }
 
 .PageNavigation a {
