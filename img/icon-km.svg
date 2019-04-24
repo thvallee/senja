@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="29px" viewBox="0 0 18 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-km</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-km" transform="translate(0.000000, 1.000000)" stroke="#222222" stroke-width="1.5">
+            <path d="M10.2382813,26.3125 C0.89453125,18.7265625 -1.44140625,11.7447917 3.23046875,5.3671875 C10.2382813,-4.19921875 15.0123331,2.64926388 16.1197603,5.3671875 C17.2271874,8.08511112 17.2271874,10.5196269 15.4179688,13.4482422 C14.211823,15.4006524 12.4852605,19.6887383 10.2382813,26.3125 Z" id="Path-2"></path>
+            <path d="M8.5,13 C10.4329966,13 11.554323,11.6568542 11.554323,10 C11.554323,8.34314575 10.4329966,7 8.5,7 C6.56700338,7 4.93623955,9.0192664 4.93623955,10.6761207 C4.93623955,12.3329749 6.56700338,13 8.5,13 Z" id="Oval"></path>
+        </g>
+    </g>
+</svg>

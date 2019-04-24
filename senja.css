@@ -1,74 +1,99 @@
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.header {
+  height: 200px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  background: url(img/header.png) center center no-repeat;
+  background-size: contain;
+}
+
+.container {
+  max-width: 740px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+aside {
+  font-size: 12px;
+}
+aside iframe {
+  display: block;
+}
+aside > div {
+  margin-top: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.date {
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
   body {
-    padding: 0 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 18px;
   }
-
   .header {
-    height: 200px;
-    margin-bottom: 30px;  
-    max-width: 100%;
-    background: url(img/header.png) center center no-repeat;
-    background-size: contain;
+    margin-bottom: 70px;
+    height: 300px;
   }
-
-  .container {
-    max-width: 740px;
-    margin: auto;
-  }
-
   h1 {
-    margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.1;
+    font-size: 40px;
   }
-
-  .img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-  }
-
-  .date {
-    margin-bottom: 30px;
-    color: gray;
-  }
-
-  .PageNavigation {
-    font-size: 14px;
-    display: block;
-    width: auto;
-    overflow: hidden;
-  }
-
-  .PageNavigation a {
-    display: block;
-    width: 50%;
+}
+@media screen and (max-width: 1179px) {
+  iframe {
     float: left;
-    margin: 1em 0;
+    margin-right: 20px;
   }
-
-  .PageNavigation .next {
-    text-align: right;
+}
+@media screen and (min-width: 1180px) {
+  aside {
+    position: absolute;
+    right: 10px;
+    top: 480px;
+    padding: 10px;
   }
-
-  @media screen and (min-width: 768px) {
-    body {
-      font-size: 18px;
-    }
-    .header {
-      margin-bottom: 70px;
-      height: 300px;
-    }
-    h1 {
-      font-size: 40px;
-    }
-  }
-
+}

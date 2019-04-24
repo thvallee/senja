@@ -1,17 +1,6 @@
 ---
 layout: default
 ---
-<aside>
-   {% if page.kms %}
-    <div> Kms parcourus aujourd'hui : {{ page.kms }}, depuis le début : {{ page.total }}</div>
-    {% endif %}
-    
-    {% if page.lat %}    
-    <div>Position : {{ page.lat }} latitude Nord, {{ page.lng }} longitude Est</div>
-    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox={{page.lng | minus: 1}}%2C{{page.lat | minus: 1}}%2C{{page.lng | plus: 1}}%2C{{page.lat | plus: 1}}&amp;marker={{page.lat}}%2C{{page.lng}}" style="border: 1px solid black"></iframe><br/>
-    <small><a href="https://www.openstreetmap.org/?mlat={{page.lat}}&amp;mlon={{page.lng}}#map=9/{{page.lat}}/{{page.lng}}&amp;" target="_blank">Afficher une carte plus grande</a></small>      
-    {% endif %}
-</aside>
 
 <article>
   <h1>{{ page.title }}</h1>
@@ -19,6 +8,25 @@ layout: default
   {{ content }}
 </article>
 
+<aside>
+    {% if page.lat %}    
+    <iframe width="200" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox={{page.lng | minus: 1}}%2C{{page.lat | minus: 1}}%2C{{page.lng | plus: 1}}%2C{{page.lat | plus: 1}}&amp;marker={{page.lat}}%2C{{page.lng}}" style="border: 1px solid black"></iframe><br/>
+    <small><a href="https://www.openstreetmap.org/?mlat={{page.lat}}&amp;mlon={{page.lng}}#map=9/{{page.lat}}/{{page.lng}}&amp;" target="_blank">Afficher une carte plus grande</a></small>      
+    {% endif %}
+    
+   {% if page.kms %}
+    <div><img src="/img/icon-velo.svg" alt=""> Kms parcourus :<br>
+    aujourd'hui : { page.kms } <br>
+    depuis le début : {{ page.total }}</div>
+    {% endif %}
+    
+    {% if page.lat %}    
+    <div><img src="/img/icon-km.svg" alt=""> Position : <br> 
+    {{ page.lat }} latitude Nord <br> 
+    {{ page.lng }} longitude Est</div>
+    {% endif %}
+
+</aside>
 
 <div class="PageNavigation">
   {% if page.previous.url %}
