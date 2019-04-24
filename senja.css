@@ -97,10 +97,12 @@ h1 {
   }
 }
 @media screen and (min-width: 1180px) {
+  article {
+    position: relative;
+  }
   aside {
     position: absolute;
-    right: 10px;
-    top: 480px;
-    padding: 10px;
+    left: 740px;
+    top: 0;
   }
 }

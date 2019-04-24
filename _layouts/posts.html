@@ -6,9 +6,7 @@ layout: default
   <h1>{{ page.title }}</h1>
   <div class="date">{{ page.date | date: "%d/%m/%Y"}} - {{ page.by }}</div>
   {{ content }}
-</article>
-
-<aside>
+  <aside>
     {% if page.lat %}
     <div class="map">
       <iframe width="200" height="160" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox={{page.lng | minus: 1}}%2C{{page.lat | minus: 1}}%2C{{page.lng | plus: 1}}%2C{{page.lat | plus: 1}}&amp;marker={{page.lat}}%2C{{page.lng}}" style="border: 1px solid black"></iframe><br/>
@@ -27,8 +25,10 @@ layout: default
     {{ page.lat }} latitude Nord <br> 
     {{ page.lng }} longitude Est</div>
     {% endif %}
+  </aside>
+</article>
 
-</aside>
+
 
 <div class="PageNavigation">
   {% if page.previous.url %}
