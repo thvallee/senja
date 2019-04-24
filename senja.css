@@ -30,7 +30,7 @@ aside {
 aside iframe {
   display: block;
 }
-aside > div {
+aside .infos {
   margin-top: 10px;
 }
 
@@ -45,7 +45,7 @@ h1 {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .date {
@@ -83,9 +83,15 @@ h1 {
   h1 {
     font-size: 40px;
   }
+  .img {
+    margin: 50px auto;
+  }
 }
 @media screen and (max-width: 1179px) {
-  iframe {
+  aside {
+    padding: 30px 0 50px 0;
+  }
+  .map {
     float: left;
     margin-right: 20px;
   }
