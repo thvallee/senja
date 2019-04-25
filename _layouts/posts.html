@@ -45,9 +45,10 @@ layout: default
   {% endif %}
 </div>
 
-<p>Pour nous laisser un commentaire, écrivez à <a href="mailto:senja@alelaba.com?subject={{page.title}}">senja@alelaba.com</a></p>
-<ul>
+<hr>
+<p style="font-weight: bold; margin-top: 50px;">Pour nous laisser un commentaire, écrivez à <a href="mailto:senja@alelaba.com?subject={{page.title}}">senja@alelaba.com</a></p>
+<ul style="padding: 0;">
 {% for comment in page.comments %}
-  <li>{{comment}}</li>
+  <li style="padding: 15px; background: #f5f5f5; list-style-type: none;">{{comment}}</li>
 {% endfor %}  
 </ul>
