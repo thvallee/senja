@@ -19,8 +19,9 @@ title:  "Carte"
    
   var init = function(){
     console.log('init')
-    var map = L.map('map').setView([51.505, -0.09], 13)
-    var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors', maxZoom: 19})
+    var map = L.map('map')
+    map.fitBounds([[48.5, 7.6],[69.57, 17.8]])
+    var osmLayer = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors', maxZoom: 19})
     map.addLayer(osmLayer)    
   }
   window.onload = init
