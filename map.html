@@ -17,12 +17,26 @@ title:  "Carte"
   {% endfor %}
   console.log('Posts: ' + JSON.stringify(posts))
    
+  // pour les tests
+  for (var i=0; i < 10; i++){
+    posts.push({
+      lat: 45 + i,
+      lng: 6 + i,
+      title: "Jour " + i,
+      date: posts[0].date
+    })    
+  }
+   
   var init = function(){
-    console.log('init')
+        
     var map = L.map('map')
+    map.scrollWheelZoom.disable()
     map.fitBounds([[48.5, 7.6],[69.57, 17.8]])
     var osmLayer = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors', maxZoom: 19})
-    map.addLayer(osmLayer)    
+    map.addLayer(osmLayer)
+    posts.forEach(function(post){
+      L.marker([post.lat, post.lng], {title: post.title}).addTo(map)
+    })
   }
   window.onload = init
    
