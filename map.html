@@ -6,12 +6,14 @@ title:  "Carte"
 <script>
   var posts = []
   {% for post in site.posts %}
+  {% if post.lat %}
   posts.push({
     lat: {{post.lat}},
     lng: {{post.lng}},
     date: "{{post.date}}",
     title: "{{post.title}}"
   })
+  {% endif %}
   {% endfor %}
   console.log('Posts: ' + JSON.stringify(posts))
 </script>
