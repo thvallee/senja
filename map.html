@@ -18,12 +18,14 @@ title:  "Carte"
   console.log('Posts: ' + JSON.stringify(posts))
    
   var init = function(){
+    console.log('init')
     var map = L.map('map').setView([51.505, -0.09], 13)
     var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors', maxZoom: 19})
     map.addLayer(osmLayer)    
   }
+  window.onload = init
    
 </script>
 
-<div onload="init()" id="map" style="width: 100%; height: 100vh;">
+<div id="map" style="width: 100%; height: 100vh;">
 </div>
