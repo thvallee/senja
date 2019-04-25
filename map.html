@@ -4,7 +4,7 @@ title:  "Carte"
 ---
 
 <script>
-  var posts = {{ site.posts | jsonify}};
+  var posts = {{ site.posts | escape | jsonify }};
 </script>
 
 <div>
