@@ -9,7 +9,8 @@ title:  "Carte"
   {% if post.lat %}
   posts.push({
     lat: {{post.lat}},
-    lng: {{post.lng}},    
+    lng: {{post.lng}},
+    url: '{{post.url}}',
     date: '{{post.date | date: "%d/%m/%Y"}}',
     title: "{{post.title | escape}}"
   })
