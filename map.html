@@ -11,7 +11,7 @@ title:  "Carte"
     lat: {{post.lat}},
     lng: {{post.lng}},
     date: "{{post.date}}",
-    title: "{{post.title}}"
+    title: "{{post.title | escape}}"
   })
   {% endif %}
   {% endfor %}
