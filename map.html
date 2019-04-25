@@ -24,6 +24,7 @@ title:  "Carte"
       lat: 45 + i,
       lng: 6 + i,
       title: "Jour " + i,
+      url: "/",
       date: posts[0].date
     })    
   }
@@ -38,9 +39,8 @@ title:  "Carte"
     posts.forEach(function(post){
       var date = post.date
       marker = L.marker([post.lat, post.lng], {title: date + ' - ' + post.title})
-      marker.bindPopup('<div>' + date + '<br>' + post.title + '</div>').openPopup()
+      marker.bindPopup('<div>' + date + '<br><a href="' + post.url + '">' + post.title + '</a></div>').openPopup()
       marker.addTo(map)
-
     })
   }
   window.onload = init
