@@ -49,10 +49,6 @@ h1 {
   margin: 30px auto;
 }
 
-.img-vert {
-    transform: rotate(90deg);
-}
-
 .date {
   margin-bottom: 30px;
   color: gray;
